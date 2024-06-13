@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=============== BODY =================*/
+
+body {
+    background: linear-gradient(to right, rgba(255, 87, 247, 0.541), rgba(168, 57, 253, 0.7)), 
+    url(images/capa.png);
+    background-size: 120%;
+    background-position: 20% 0;
+}
+
+/*=============== HEADER =================*/
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-item a:hover {
+    color:rgb(191, 191, 191);
+}
+
+
+/*=============== CONTENT ============= */
+
+
+#carouselExample {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-item h2 {
+    color: white;
+    font-size: 80px;
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.music-button {
+    border-radius: 30px;
+    width: 300px;
+    height: 45px;
+    border: 3px solid white;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    margin-top: 40px;
+}
+
+.free-button {
+    border-radius: 30px;
+    width: 300px;
+    height: 45px;
+    border: 3px solid rgb(114, 42, 239);
+    font-size: 18px;
+    background-color: rgb(114, 42, 239);
+    color: white;
+    margin-top: 40px;
+}
+
+.premium-button {
+    border-radius: 30px;
+    width: 300px;
+    height: 45px;
+    border: 3px solid white;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    margin-top: 40px;
+}
+
+
+/* ------------------------------- */
+
+.discs {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.discsContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albumPhotos img{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.albumInfo img {
+    margin: 15px;
+}
+
+#albumInfo h1 {
+    color: rgb(114, 42, 239);
+}
+
+#albumInfo h2 {
+    color: rgb(114, 42, 239);
+}
+
+#albumInfo h5 {
+    color: black;
+}
+
+
+/* ----------------------------- */
+
+
+.phones {
+    padding: 30px;
+    width: 100%;
+    height: 100%; 
+}
+
+.phoneContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.textPhones h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.textPhones h2 {
+    color: rgb(174, 237, 223);
+    font-weight: bold;
+}
+
+.textPhones h5 {
+    color: white;
+}
+
+.textPhones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#phonesImages {
+    display: flex;
+    justify-content: center;
+}
+
+#phonesImages img {
+    margin: 15px;
+}
+
+#phonesImages img:first-child {
+    position: relative;
+    top: -120px;
+    transform: rotate(10deg);
+    padding-left: 80px;
+}
+
+#phonesImages img:last-child {
+    position: relative;
+    bottom: -120px;
+    transform: rotate(10deg);
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-name: slideInFromRight;
+    animation-duration: 2.5s;
+}
+
+
+/* ============== FOOTER ============== */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+  }
+
+.container-footer {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.list-unstyled a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-unstyled a:hover {
+    color:rgb(191, 191, 191);
+}
+
+#footerRow {
+    width: 100%;
+}
